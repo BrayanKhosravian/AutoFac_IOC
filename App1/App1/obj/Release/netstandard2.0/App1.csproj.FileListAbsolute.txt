@@ -1,0 +1,13 @@
+D:\_Xamarin\#\AutoFac_IOC\App1\App1\bin\Release\netstandard2.0\App1.deps.json
+D:\_Xamarin\#\AutoFac_IOC\App1\App1\bin\Release\netstandard2.0\App1.dll
+D:\_Xamarin\#\AutoFac_IOC\App1\App1\bin\Release\netstandard2.0\App1.pdb
+D:\_Xamarin\#\AutoFac_IOC\App1\App1\obj\Release\netstandard2.0\App.xaml.g.cs
+D:\_Xamarin\#\AutoFac_IOC\App1\App1\obj\Release\netstandard2.0\Views\Page1.xaml.g.cs
+D:\_Xamarin\#\AutoFac_IOC\App1\App1\obj\Release\netstandard2.0\Views\Page2.xaml.g.cs
+D:\_Xamarin\#\AutoFac_IOC\App1\App1\obj\Release\netstandard2.0\Views\Page3.xaml.g.cs
+D:\_Xamarin\#\AutoFac_IOC\App1\App1\obj\Release\netstandard2.0\App1.csproj.CoreCompileInputs.cache
+D:\_Xamarin\#\AutoFac_IOC\App1\App1\obj\Release\netstandard2.0\App1.AssemblyInfoInputs.cache
+D:\_Xamarin\#\AutoFac_IOC\App1\App1\obj\Release\netstandard2.0\App1.AssemblyInfo.cs
+D:\_Xamarin\#\AutoFac_IOC\App1\App1\obj\Release\netstandard2.0\XamlC.stamp
+D:\_Xamarin\#\AutoFac_IOC\App1\App1\obj\Release\netstandard2.0\App1.dll
+D:\_Xamarin\#\AutoFac_IOC\App1\App1\obj\Release\netstandard2.0\App1.pdb

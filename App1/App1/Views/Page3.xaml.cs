@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using App1.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +15,8 @@ namespace App1.Views
 		public Page3 ()
 		{
 			InitializeComponent ();
+
+		    BindingContext = ViewModelLocator.Resolve<Page3ViewModel>();
 		}
 	}
 }

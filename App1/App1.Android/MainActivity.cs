@@ -1,11 +1,9 @@
-﻿using System;
-
+﻿
 using Android.App;
 using Android.Content.PM;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
+using App1.Droid.Services;
+using App1.Interfaces;
 
 namespace App1.Droid
 {
@@ -19,7 +17,10 @@ namespace App1.Droid
 
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            LoadApplication(new App());
+
+            IStringProvider stringProvider = new StringProvider("from stringprovider");
+
+            LoadApplication(new App(stringProvider));
         }
     }
 }

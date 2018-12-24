@@ -7,6 +7,9 @@
             <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button Text="DisplayAlertStringProvider" Command="{Binding CommandExecute}"/>
+            <Button Text="NextPage" Command="{Binding CommandNextPage}"/>
+            <Button Text="NavigateBack" Command="{Binding CommandNavigateBack}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

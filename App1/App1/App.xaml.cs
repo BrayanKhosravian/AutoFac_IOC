@@ -1,5 +1,9 @@
 ﻿using System;
+using App1.Interfaces;
+using App1.Services;
+using App1.ViewModels;
 using App1.Views;
+using Autofac;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -8,9 +12,20 @@ namespace App1
 {
     public partial class App : Application
     {
-        public App()
+        private readonly IStringProvider _stringProvider;
+
+        private static IContainer _container;
+
+        public App(IStringProvider stringProvider)
         {
             InitializeComponent();
+
+            _stringProvider = stringProvider;
+
+            ViewModelLocator.RegisterViewModels();
+            ViewModelLocator.RegisterServices();
+            ViewModelLocator.RegisterInstance<IStringProvider>(stringProvider);
+            ViewModelLocator.Build();
 
             MainPage = new NavigationPage(new Page1());
         }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using App1.ViewModels;
+using Autofac;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,7 +16,7 @@ namespace App1.Views
 		public Page1 ()
 		{
 			InitializeComponent ();
-		    BindingContext = ViewModelLocator.Resolve<Page1ViewModel>();
+		    BindingContext = ViewModelLocator2.Resolve<Page1ViewModel>(); //ViewModelLocator.Resolve<Page1ViewModel>();
 		}
 	}
 }

@@ -4184,11 +4184,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\_Xamarin\\#\\AutoFac_IOC\\App1\\App1.Android\\App1.Android.csproj",
+      "projectUniqueName": "C:\\_Xamarin\\#\\AutoFac_IOC\\App1\\App1.Android\\App1.Android.csproj",
       "projectName": "App1.Android",
-      "projectPath": "D:\\_Xamarin\\#\\AutoFac_IOC\\App1\\App1.Android\\App1.Android.csproj",
+      "projectPath": "C:\\_Xamarin\\#\\AutoFac_IOC\\App1\\App1.Android\\App1.Android.csproj",
       "packagesPath": "C:\\Users\\braya\\.nuget\\packages\\",
-      "outputPath": "D:\\_Xamarin\\#\\AutoFac_IOC\\App1\\App1.Android\\obj\\",
+      "outputPath": "C:\\_Xamarin\\#\\AutoFac_IOC\\App1\\App1.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -4205,8 +4205,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "D:\\_Xamarin\\#\\AutoFac_IOC\\App1\\App1\\App1.csproj": {
-              "projectPath": "D:\\_Xamarin\\#\\AutoFac_IOC\\App1\\App1\\App1.csproj"
+            "C:\\_Xamarin\\#\\AutoFac_IOC\\App1\\App1\\App1.csproj": {
+              "projectPath": "C:\\_Xamarin\\#\\AutoFac_IOC\\App1\\App1\\App1.csproj"
             }
           }
         }

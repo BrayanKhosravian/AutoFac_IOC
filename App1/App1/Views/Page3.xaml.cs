@@ -16,7 +16,7 @@ namespace App1.Views
 		{
 			InitializeComponent ();
 
-		    BindingContext = ViewModelLocator.Resolve<Page3ViewModel>();
+		    BindingContext = ViewModelLocator2.Resolve<Page3ViewModel>();
 		}
 	}
 }

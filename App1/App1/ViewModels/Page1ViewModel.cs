@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 namespace App1.ViewModels
 {
-    class Page1ViewModel
+    class Page1ViewModel : BaseViewModel
     {
         private IPageService _pageService;
 

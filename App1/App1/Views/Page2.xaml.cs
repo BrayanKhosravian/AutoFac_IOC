@@ -20,7 +20,7 @@ namespace App1.Views
 			InitializeComponent ();
 		    _parameter = parameter;
 
-		    BindingContext = ViewModelLocator.ResolveWithParameter<Page2ViewModel>(new NamedParameter("test", parameter));
+		    BindingContext = ViewModelLocator2.ResolveWithParameter<Page2ViewModel>(new NamedParameter("test", parameter));
 		}
 	}
 }

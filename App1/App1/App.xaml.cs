@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using App1.Interfaces;
 using App1.Services;
 using App1.ViewModels;
@@ -7,6 +8,10 @@ using Autofac;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+// using Microsoft.Practices.ServiceLocation;
+using App1.Autofac;
+using App1.AutofacModules;
+
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace App1
 {
@@ -14,18 +19,23 @@ namespace App1
     {
         private readonly IStringProvider _stringProvider;
 
-        private static IContainer _container;
-
         public App(IStringProvider stringProvider)
         {
             InitializeComponent();
 
             _stringProvider = stringProvider;
 
-            ViewModelLocator.RegisterViewModels();
-            ViewModelLocator.RegisterServices();
-            ViewModelLocator.RegisterInstance<IStringProvider>(stringProvider);
-            ViewModelLocator.Build();
+            var builder = new ContainerBuilder();
+
+            // register viewmodels and services with modules (located in App1.Autofac)
+            builder.RegisterModule<ViewModelModule>();
+            builder.RegisterModule<ServiceModule>();
+
+            // register instance from platform specifics
+            builder.RegisterInstance<IStringProvider>(stringProvider).SingleInstance();
+
+            var container = builder.Build();
+            ViewModelLocator2.SetContainerProvider(container);
 
             MainPage = new NavigationPage(new Page1());
         }

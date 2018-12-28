@@ -572,11 +572,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\_Xamarin\\#\\AutoFac_IOC\\App1\\App1\\App1.csproj",
+      "projectUniqueName": "C:\\_Xamarin\\#\\AutoFac_IOC\\App1\\App1\\App1.csproj",
       "projectName": "App1",
-      "projectPath": "D:\\_Xamarin\\#\\AutoFac_IOC\\App1\\App1\\App1.csproj",
+      "projectPath": "C:\\_Xamarin\\#\\AutoFac_IOC\\App1\\App1\\App1.csproj",
       "packagesPath": "C:\\Users\\braya\\.nuget\\packages\\",
-      "outputPath": "D:\\_Xamarin\\#\\AutoFac_IOC\\App1\\App1\\obj\\",
+      "outputPath": "C:\\_Xamarin\\#\\AutoFac_IOC\\App1\\App1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

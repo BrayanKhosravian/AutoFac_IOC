@@ -6,10 +6,12 @@ using App1.Services;
 using App1.ViewModels;
 using App1.Views;
 using Autofac;
+using Autofac.Core;
 
 namespace App1
 {
-    class ViewModelLocator
+    [Obsolete("class is obsolete, please use ViewModelLocator2 instead")]
+    static class ViewModelLocator
     {
         private static IContainer _container;
         private static ContainerBuilder _builder = new ContainerBuilder();
@@ -17,6 +19,18 @@ namespace App1
         static ViewModelLocator()
         {
 
+        }
+
+        public static T ResolveWithParameters<T>(params Parameter[] parameters) where T : class
+        {
+            if(parameters.Length == 0) throw new ArgumentNullException();
+            if(parameters == null) throw new ArgumentNullException();
+
+            if (parameters.Length == 1) return _container.Resolve<T>(parameters[0]);
+            else
+            {
+                return _container.Resolve<T>(parameters);   
+            }
         }
 
         public static T ResolveWithParameter<T>(NamedParameter parameter) where T : class
